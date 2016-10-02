@@ -28,13 +28,13 @@ iterator = twitter_stream.statuses.sample()
 
 i=0
 for tweet in iterator:
-    if i < args.count:
-        if "text" in tweet:
-            text = tweet["text"]
-            date = tweet["created_at"]
-            print(text, date)
-    else:
+    if i > args.count:
         break
+    
+    if "text" in tweet:
+        text = tweet["text"]
+        date = tweet["created_at"]
+        print(text, date)
     i+=1
 
 

@@ -33,7 +33,7 @@ for tweet in iterator:
             text = tweet["text"]
             date = tweet["created_at"]
             print(text, date)
-        i+=1
+    i+=1
 
 
 

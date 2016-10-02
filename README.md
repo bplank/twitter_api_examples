@@ -1,2 +1,2 @@
-### Code samples to access the Twitter API
+# Tiny Twitter tutorial
 

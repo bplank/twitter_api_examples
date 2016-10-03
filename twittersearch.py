@@ -10,8 +10,8 @@ my_authentication = OAuth(cred["ACCESS_TOKEN"], cred["ACCESS_TOKEN_SECRET"], \
 
 twitter = Twitter(auth=my_authentication)
             
-# Search for latest tweets about "#nlproc"
+# Search for latest tweets, e.g. about Groningen or "#digitalhumanities" etc.
 query =  twitter.search.tweets(q='Groningen',count=10)
 for tweet in query["statuses"]:
-    print(tweet['text'])
+    print(tweet['user']['screen_name'],tweet['text'])
 

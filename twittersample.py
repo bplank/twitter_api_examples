@@ -34,7 +34,8 @@ for tweet in iterator:
     if "text" in tweet:
         text = tweet["text"]
         date = tweet["created_at"]
-        print(text, date)
+        print(text, date) #note: text contains newlines!
+#        print(tweet["user"]["screen_name"])
     i+=1
 
 
